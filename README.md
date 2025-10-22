@@ -23,6 +23,7 @@ The application uses Spring Boot and Spring Security to control user authenticat
 ## Architecture Summary
 
 | Component | Description |
+| --- | --- |
 | AuthDemoApplication.java | Entry point of the Spring Boot application |
 | SecurityConfig.java | Defines authentication and authorization rules (users, roles, and endpoint restrictions) |
 | UserController.java | Endpoint for users with the `ROLE_USER` privilege |
@@ -35,6 +36,7 @@ Each controller represents a protected service, accessible only to a specific ro
 ## Technologies and Libraries Used
 
 | Technology / Library | Purpose |
+| --- | --- |
 | Java 17 | Programming language used (per assignment constraint) |
 | Sprint Boot 3.x | Framework for rapid application development |
 | Spring Security | Provides authentication and authorization mechanisms | 
