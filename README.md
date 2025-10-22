@@ -16,3 +16,6 @@
 ## Logout
 
 - [http://localhost:8080/logout]
+
+## Class Diagram
+
