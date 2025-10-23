@@ -110,6 +110,8 @@ This tactic aligns with least privilege, ensuring users can only access endpoint
 ## Sequence Diagram
 
 ![Sequence Diagram](assets/Sequence%20Diagram.png)
+The sequence diagram shows the step-by-step process how our authentication and authorization system works when a general user attempts to use it. First, a user would send a request to the server with their credentials. During the authentication process, the system will forward the credentials to the authentication service to verify their validity. If this fails, the user will receive an 'access denied' due to invalid credentials. If it is a success, then the process moves to the authorization. In this phase, the Authorization Service will check whether the user has the required roles and permissions for the request resource or call. If authorized, then the resources are retrieved and sent to the user; otherwise, the system will deny access due to insufficient privileges.
 
-## Class Diagram
+## Class Diagram 
 ![Class Diagram](assets/Class_Diagram.png)
+At the top level, the AuthDemo Application class handles the application. The SecurityConfig handles the system's security configuration, specifically the username and password, while using a password encoder to encrypt and verify a user's password. This security class protects four main controllers: Admin, Manager, User, and Analyst. Each control has a role-specific operation that requires authentication of the user in order to use it.
